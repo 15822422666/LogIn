@@ -1,4 +1,4 @@
-package com.example.shanxinoodles;
+package com.example.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,10 +7,13 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import homepage.HomePageActivity;
 
 public class LogInActivity extends AppCompatActivity {
 
@@ -27,6 +30,10 @@ public class LogInActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_log_in);
+        //添加沉浸效果
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        //
         user_name_edit = findViewById(R.id.user_edit);
         password_edit = findViewById(R.id.password_edit);
         remember_password = findViewById(R.id.remember_password);
@@ -65,8 +72,9 @@ public class LogInActivity extends AppCompatActivity {
                     } else {
                         //有待添加逻辑
                     }
+
                     editor.apply();
-                    Intent intent = new Intent(LogInActivity.this,HomePageActivity.class);
+                    Intent intent = new Intent(LogInActivity.this, HomePageActivity.class);
                     startActivity(intent);
                     Toast.makeText(LogInActivity.this, "登录成功", Toast.LENGTH_SHORT).show();
                     finish();

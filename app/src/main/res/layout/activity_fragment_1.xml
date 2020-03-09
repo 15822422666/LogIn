@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="homepage.HomePageActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="我是主页"
-        android:gravity="center"
-        android:textSize="50dp"/>
+    tools:context="homepage.FragmentActivity_1">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shanxinoodles">
+    package="com.example.login">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RetrievePasswordActivity"></activity>
-        <activity android:name=".HomePageActivity" />
-        <activity android:name=".HomePageAcivity" />
+        <activity android:name="homepage.FragmentActivity_2"></activity>
+        <activity android:name="homepage.FragmentActivity_1" />
+        <activity android:name=".RetrievePasswordActivity" />
+        <activity android:name="homepage.HomePageActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".LogInActivity">
             <intent-filter>

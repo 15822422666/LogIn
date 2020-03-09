@@ -1,4 +1,4 @@
-package com.example.shanxinoodles;
+package com.example.login;
 
 import org.junit.Test;
 
